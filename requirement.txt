@@ -1,0 +1,5 @@
+pip uninstall grpcio
+export GRPC_PYTHON_LDFLAGS=" -framework CoreFoundation"
+pip install grpcio --no-binary :all:
+
+# 不要安装grpcio-tools
